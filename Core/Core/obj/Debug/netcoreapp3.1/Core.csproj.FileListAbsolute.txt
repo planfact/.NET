@@ -1,0 +1,14 @@
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.exe
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.json
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.dev.json
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.dll
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Core.pdb
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.dll
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.pdb
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Request.dll
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Request.pdb
+D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.csproj.CopyComplete

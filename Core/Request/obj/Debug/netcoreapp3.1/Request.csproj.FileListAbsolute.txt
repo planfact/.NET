@@ -1,0 +1,8 @@
+D:\main work\.NET\Core\Request\bin\Debug\netcoreapp3.1\Request.deps.json
+D:\main work\.NET\Core\Request\bin\Debug\netcoreapp3.1\Request.dll
+D:\main work\.NET\Core\Request\bin\Debug\netcoreapp3.1\Request.pdb
+D:\main work\.NET\Core\Request\obj\Debug\netcoreapp3.1\Request.csprojAssemblyReference.cache
+D:\main work\.NET\Core\Request\obj\Debug\netcoreapp3.1\Request.AssemblyInfoInputs.cache
+D:\main work\.NET\Core\Request\obj\Debug\netcoreapp3.1\Request.AssemblyInfo.cs
+D:\main work\.NET\Core\Request\obj\Debug\netcoreapp3.1\Request.dll
+D:\main work\.NET\Core\Request\obj\Debug\netcoreapp3.1\Request.pdb

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Павел\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Павел\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Core.138388525.00" t="ExcludeRecursive" />
+    <e p="D:\main work\.NET\Core" t="IncludeFlat">
+      <e p="Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Core.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="Core.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Request" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DataForPost.cs" t="Include" />
+        <e p="Get.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Request.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Post.cs" t="Include" />
+        <e p="Request.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
