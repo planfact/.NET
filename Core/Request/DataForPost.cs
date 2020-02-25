@@ -10,7 +10,8 @@ namespace Request
         public string longTitle { get; set; }
         public string description { get; set; }
         public int companyId { get; set; }
-        public string accountType {get; set;}
+        public string accountType { get; set;}
+        public string accoutnAcct { get; set; }
         public string accountBik { get; set; }
         public string accountBank { get; set; }
         public string currencyCode { get; set; }

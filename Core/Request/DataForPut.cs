@@ -11,7 +11,6 @@ namespace Request
         public string comment { get; set; }
         public bool isCommitted { get; set; }
         public List<Item> items { get; set; }
-        public int value { get; set; }
     }
     public class Item
     {
@@ -20,7 +19,6 @@ namespace Request
         public object contrAgentId { get; set; }
         public object operationCategoryId { get; set; }
         public object projectId { get; set; }
-        public int firstAdditionalOperationAttributeId { get; set; }
         public int value { get; set; }
     }
 }
