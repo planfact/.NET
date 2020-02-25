@@ -12,3 +12,4 @@ D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.pdb
 D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Request.dll
 D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Request.pdb
 D:\main work\.NET\Core\Core\obj\Debug\netcoreapp3.1\Core.csproj.CopyComplete
+D:\main work\.NET\Core\Core\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

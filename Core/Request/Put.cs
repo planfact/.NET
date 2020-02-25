@@ -5,13 +5,13 @@ using System;
 
 namespace Request
 {
-    public class Post
+    public class Put
     {
         static readonly HttpClient client = new HttpClient();
-        public Post (string apiKey, DataForPost data)
+        public Put(string apiKey, int operationId, DataForPut data)
         {
             client.DefaultRequestHeaders.Add("X-ApiKey", apiKey);
-            using (var request = new HttpRequestMessage(HttpMethod.Post, "https://api.planfact.io/api/v1/accounts"))
+            using (var request = new HttpRequestMessage(HttpMethod.Put, "https://api.planfact.io/api/v1/operations/income/" + operationId.ToString()))
             {
                 var json = JsonConvert.SerializeObject(data);
                 using (var stringContent = new StringContent(json, Encoding.UTF8, "application/json"))
