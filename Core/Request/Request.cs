@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Request.Models;
 
@@ -26,15 +27,16 @@ namespace Request
             }
         }
         
-        public void Get (string apiKey, HttpClient client)
+        public async void Get (string apiKey, HttpClient client)
         {
             try
             {
                 client.DefaultRequestHeaders.Add("X-ApiKey", apiKey);
                 HttpResponseMessage response = client.GetAsync("https://api.planfact.io/api/v1/accounts").GetAwaiter().GetResult();
                 response.EnsureSuccessStatusCode();
-                string responseBody = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                string responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 Console.WriteLine(responseBody);
+                var result = JsonConvert.DeserializeObject<Response<List<AccountModel>>>(responseBody);
             }
             catch (HttpRequestException e)
             {
@@ -52,6 +54,8 @@ namespace Request
             request.Content = stringContent;
             var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
             response.EnsureSuccessStatusCode();
+            var responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+            var result = JsonConvert.DeserializeObject<Response<AccountModel>>(responseBody);
             return await response.Content.ReadAsStringAsync();
         }
 
