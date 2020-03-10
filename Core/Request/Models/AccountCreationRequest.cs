@@ -26,11 +26,11 @@ namespace Request.Models
         /// </summary>
         public int CompanyId { get; set; }
         /// <summary>
-        /// Тип счёта. Cash - если наличные, Card - если карточка. Обязательное поле!
+        /// Тип счёта. Cash - если наличные, Card - если безналичные. Обязательное поле!
         /// </summary>
         public string AccountType { get; set;}
         /// <summary>
-        /// Номер счёта, если его нет, то null.
+        /// Номер счёта, если его нет, то null. Только для безналичного счёта
         /// </summary>
         public string AccountAcct { get; set; }
         /// <summary>
