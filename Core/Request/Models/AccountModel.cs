@@ -7,6 +7,9 @@ namespace Request.Models
     /// </summary>
     public class AccountModel
     {
+        /// <summary>
+        /// Id юрлица
+        /// </summary>
         public int CompanyId { get; set; }
         /// <summary>
         /// Тип счёта
@@ -17,27 +20,27 @@ namespace Request.Models
         /// </summary>
         public string AccountTypeTitle { get; set; }
         /// <summary>
-        /// Код валюты
+        /// Код валюты см. https://apidoc.planfact.io/
         /// </summary>
         public string CurrencyCode { get; set; }
         /// <summary>
-        /// Полное название
+        /// Полное название счёта
         /// </summary>
         public string LongTitle { get; set; }
         /// <summary>
-        /// Описание
+        /// Комментарий
         /// </summary>
         public string Description { get; set; }
         /// <summary>
-        /// Номер
+        /// Номер счёта. Только безнал
         /// </summary>
         public string AccountAcct { get; set; }
         /// <summary>
-        /// БИК
+        /// БИК. Только безнал
         /// </summary>
         public string AccountBik { get; set; }
         /// <summary>
-        /// Банк
+        /// Банк. Только безнал
         /// </summary>
         public string AccountBank { get; set; }
         /// <summary>
@@ -61,18 +64,18 @@ namespace Request.Models
         /// </summary>
         public int? BankImportIntegrationTokenId { get; set; }
         /// <summary>
-        /// Id банка с которым интегрируется счет
+        /// Id банка, с которым интегрируется счет
         /// </summary>
         public int? BankImportIntegrationTokenBankId { get; set; }
        
 
         /// <summary>
-        /// Дата последней модификации
+        /// Дата последнего изменения
         /// </summary>
         public DateTime ModifyDate { get; set; }
 
         /// <summary>
-        /// Дата создания
+        /// Дата создания счёта
         /// </summary>
         public DateTime CreateDate { get; set; }
         /// <summary>
@@ -81,7 +84,7 @@ namespace Request.Models
         public string ActionStatus { get; set; }
 
         /// <summary>
-        /// Признак служебного
+        /// Признак служебного счёта
         /// </summary>
         public bool IsUndistributed { get; set; }
 
