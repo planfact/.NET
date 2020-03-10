@@ -10,6 +10,12 @@ namespace Request
 {
     public class RequestExample
     {
+        /// <summary>
+        /// DELETE-запрос для удаления счёта
+        /// </summary>
+        /// <param name="apiKey">Ваш api-ключ</param>
+        /// <param name="operationId">Id операции, которую хотим удалить</param>
+        /// <param name="client">Объект класса HttpClient</param>
         public void Delete (string apiKey, int operationId, HttpClient client)
         {
             try
@@ -26,7 +32,11 @@ namespace Request
                 Console.WriteLine("Message :{0} ", e.Message);
             }
         }
-        
+        /// <summary>
+        /// GET-запрос для получения списка счётов
+        /// </summary>
+        /// <param name="apiKey">Ваш api-ключ</param>
+        /// <param name="client">Объект класса HttpClient</param>
         public async void Get (string apiKey, HttpClient client)
         {
             try
@@ -44,7 +54,13 @@ namespace Request
                 Console.WriteLine("Message :{0} ", e.Message);
             }
         }
-        
+        /// <summary>
+        /// POST-запрос для добавления счёта
+        /// </summary>
+        /// <param name="apiKey">Ваш api-ключ</param>
+        /// <param name="data">Данные счёта для добавления (данные хранятся в объекте класса AccountCreationReques)</param>
+        /// <param name="client">Объект класса HttpClient</param>
+        /// <returns>Возвращает строку с ответом</returns>
         public async Task<string> Post (string apiKey, AccountCreationRequest data, HttpClient client)
         {
             client.DefaultRequestHeaders.Add("X-ApiKey", apiKey);
@@ -58,7 +74,14 @@ namespace Request
             var result = JsonConvert.DeserializeObject<Response<AccountModel>>(responseBody);
             return await response.Content.ReadAsStringAsync();
         }
-
+        /// <summary>
+        /// PUT-запрос для изменения операции
+        /// </summary>
+        /// <param name="apiKey">Ваш api-ключ</param>
+        /// <param name="operationId">Id операции, которую хотем изменить</param>
+        /// <param name="data">Данные операции для изменения (данные хранятся в объекте класса OperationModificationRequest</param>
+        /// <param name="client">Объект класса HttpClient</param>
+        /// <returns>Возвращает строку с ответом</returns>
         public async Task<string> Put(string apiKey, int operationId, OperationModificationRequest data, HttpClient client)
         {
             client.DefaultRequestHeaders.Add("X-ApiKey", apiKey);
