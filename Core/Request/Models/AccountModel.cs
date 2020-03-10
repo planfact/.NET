@@ -2,6 +2,9 @@
 
 namespace Request.Models
 {
+    /// <summary>
+    /// Модель счёта, для ответа
+    /// </summary>
     public class AccountModel
     {
         public int CompanyId { get; set; }
